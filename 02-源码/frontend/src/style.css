@@ -1,0 +1,198 @@
+/* 052 在线课程学习与考试系统 · 全局样式
+   设计方向：教育蓝主色 #1B4F72 / 辅助 #2E86AB / 强调 #F39C12 / 背景 #F5F6F7 */
+:root {
+  --primary: #1B4F72;
+  --primary-2: #2E86AB;
+  --accent: #F39C12;
+  --bg: #F5F6F7;
+  --text: #1F2933;
+  --text-2: #5B6770;
+  --ok: #2B7955;
+  --dan: #B02A37;
+  --line: #E3E7EA;
+  --radius: 8px;
+}
+
+* { box-sizing: border-box; }
+html, body, #app { height: 100%; margin: 0; }
+body {
+  font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  font-size: 13px;
+}
+
+/* ---------- 后台布局：220px 侧栏 + 56px 顶栏 ---------- */
+.app { display: flex; height: 100vh; overflow: hidden; }
+.sidebar {
+  width: 220px; flex: 0 0 220px; background: var(--primary); color: #dbe7ef;
+  display: flex; flex-direction: column; overflow-y: auto;
+}
+.sidebar .brand {
+  height: 56px; display: flex; align-items: center; gap: 8px; padding: 0 18px;
+  font-size: 15px; font-weight: 600; color: #fff; letter-spacing: .5px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.sidebar .brand .dot { width: 8px; height: 8px; border-radius: 2px; background: var(--accent); }
+.menu { padding: 8px 10px 20px; }
+.menu .group { color: #8fb0c6; font-size: 11px; padding: 12px 10px 4px; letter-spacing: 1px; }
+.menu a {
+  display: flex; align-items: center; gap: 8px; padding: 9px 12px; border-radius: 6px;
+  color: #cfe0ec; text-decoration: none; font-size: 13px; margin-bottom: 2px;
+}
+.menu a:hover { background: rgba(255,255,255,.08); color: #fff; }
+.menu a.on { background: var(--primary-2); color: #fff; font-weight: 500; }
+.menu a .ico { width: 16px; display: inline-flex; align-items: center; justify-content: center; opacity: .92; font-size: 14px; }
+.menu a .ico i { font-style: normal; font-size: 11px; }
+
+.main { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+.topbar {
+  height: 56px; flex: 0 0 56px; background: #fff; border-bottom: 1px solid var(--line);
+  display: flex; align-items: center; padding: 0 24px; gap: 12px;
+}
+.crumb { color: var(--text-2); }
+.crumb b { color: var(--text); font-weight: 600; }
+.topbar .grow { flex: 1; }
+.topbar .icon-btn {
+  width: 32px; height: 32px; border-radius: 6px; display: grid; place-items: center;
+  cursor: pointer; color: var(--text-2); position: relative;
+}
+.topbar .icon-btn:hover { background: var(--bg); }
+.topbar .badge {
+  position: absolute; top: 2px; right: 2px; min-width: 15px; height: 15px; padding: 0 3px;
+  background: var(--dan); color: #fff; border-radius: 8px; font-size: 10px; line-height: 15px; text-align: center;
+}
+.user { display: flex; align-items: center; gap: 8px; cursor: pointer; padding: 4px 6px; border-radius: 6px; }
+.user:hover { background: var(--bg); }
+.user img { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; background: #dfe6ec; }
+.user .nm { line-height: 1.2; }
+.user .nm b { font-weight: 600; font-size: 13px; }
+.user .nm span { color: var(--text-2); font-size: 11px; }
+
+.content { flex: 1; overflow-y: auto; padding: 20px 24px; }
+.content-inner { max-width: 1400px; margin: 0 auto; }
+
+.page-head { display: flex; align-items: center; margin-bottom: 14px; gap: 10px; }
+.page-head h2 { font-size: 17px; margin: 0; font-weight: 600; }
+.page-head .sub { color: var(--text-2); font-size: 12px; }
+.page-head .grow { flex: 1; }
+
+.card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; }
+.card + .card { margin-top: 12px; }
+.card h3 { font-size: 14px; margin: 0 0 10px; font-weight: 600; }
+.card h3 .tip { color: var(--text-2); font-weight: 400; font-size: 12px; margin-left: 6px; }
+
+/* ---------- 筛选条 ---------- */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; }
+.filters .el-select, .filters .el-input { width: 200px; }
+.filters .el-date-editor { width: 200px; }
+.filters .grow { flex: 1; }
+
+/* ---------- 表格 ---------- */
+.el-table { font-size: 13px; }
+.el-table th.el-table__cell { background: #F7F9FA; color: var(--text-2); font-weight: 500; }
+.ops { display: inline-flex; gap: 10px; }
+.ops .op { color: var(--primary-2); cursor: pointer; white-space: nowrap; }
+.ops .op:hover { text-decoration: underline; }
+.ops .op.dan { color: var(--dan); }
+.tname { font-weight: 500; }
+/* 列表缩略图：ListPage 的插槽内容在父组件作用域渲染，scoped 样式不生效，必须全局 */
+.thumb { width: 64px; height: 40px; object-fit: cover; border-radius: 4px; background: #EEF2F5; display: block; }
+/* 列表缩略图：ListPage 的插槽内容在父组件作用域渲染，scoped 样式不生效，必须全局 */
+.thumb { width: 64px; height: 40px; object-fit: cover; border-radius: 4px; background: #EEF2F5; display: block; }
+.tsub { color: var(--text-2); font-size: 11px; }
+
+/* ---------- 状态标签 ---------- */
+.tag {
+  display: inline-block; padding: 1px 7px; border-radius: 3px; font-size: 11.5px;
+  background: #EEF2F5; color: var(--text-2); border: 1px solid #E1E7EB; white-space: nowrap;
+}
+.tag.ok { background: #EAF4EF; color: var(--ok); border-color: #CFE6DA; }
+.tag.warn { background: #FDF3E3; color: #9A6412; border-color: #F5E0BE; }
+.tag.dan { background: #FBECEE; color: var(--dan); border-color: #F2D3D7; }
+.tag.info { background: #EAF2F8; color: var(--primary-2); border-color: #CFE1EE; }
+
+/* ---------- 分页 ---------- */
+.pager { display: flex; justify-content: flex-end; padding-top: 12px; }
+
+/* ---------- 门户 ---------- */
+.portal { min-height: 100vh; background: var(--bg); }
+.portal-top {
+  height: 56px; background: #fff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 20;
+}
+.portal-top .inner { max-width: 1240px; margin: 0 auto; height: 56px; display: flex; align-items: center; gap: 22px; padding: 0 16px; }
+.portal-top .logo { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 15px; color: var(--primary); }
+.portal-top .logo .dot { width: 10px; height: 10px; border-radius: 3px; background: var(--accent); }
+.portal-top nav { display: flex; gap: 4px; flex: 1; }
+.portal-top nav a {
+  padding: 7px 12px; border-radius: 6px; color: var(--text-2); text-decoration: none; font-size: 13.5px;
+  display: inline-flex; align-items: center; gap: 5px;
+}
+.portal-top nav a .el-icon { font-size: 14px; }
+.portal-top nav a:hover { background: var(--bg); color: var(--primary); }
+.portal-top nav a.on { background: #EAF2F8; color: var(--primary); font-weight: 600; }
+.portal-body { max-width: 1240px; margin: 0 auto; padding: 20px 16px 40px; }
+
+/* 课程卡片 */
+.course-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.course-card {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+  display: flex; flex-direction: column; transition: box-shadow .2s, transform .2s;
+}
+.course-card:hover { box-shadow: 0 6px 18px rgba(27,79,114,.12); transform: translateY(-2px); }
+.course-card .cover { height: 118px; background: #E7EDF1; overflow: hidden; }
+.course-card .cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.course-card .body { padding: 10px 12px 12px; flex: 1; display: flex; flex-direction: column; gap: 6px; }
+.course-card .name { font-weight: 600; font-size: 13.5px; line-height: 1.35; }
+.course-card .meta { color: var(--text-2); font-size: 11.5px; display: flex; gap: 8px; flex-wrap: wrap; }
+.course-card .bar { height: 4px; background: #EEF2F5; border-radius: 2px; overflow: hidden; }
+.course-card .bar i { display: block; height: 100%; background: var(--primary-2); }
+
+/* 进度条（通用） */
+.progress { height: 6px; background: #EEF2F5; border-radius: 3px; overflow: hidden; min-width: 70px; }
+.progress i { display: block; height: 100%; background: var(--primary-2); }
+.progress.ok i { background: var(--ok); }
+.progress.dan i { background: var(--dan); }
+
+/* KPI */
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.kpi { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; }
+.kpi .lb { color: var(--text-2); font-size: 12px; }
+.kpi .vl { font-size: 22px; font-weight: 600; color: var(--primary); line-height: 1.3; margin-top: 2px; }
+.kpi .vl small { font-size: 12px; color: var(--text-2); font-weight: 400; margin-left: 3px; }
+
+/* 图表网格 */
+.charts { display: grid; gap: 12px; }
+.charts.c3 { grid-template-columns: repeat(3, 1fr); }
+.charts.c2 { grid-template-columns: repeat(2, 1fr); }
+
+.empty { padding: 28px 0; text-align: center; color: var(--text-2); }
+
+/* 登录页 */
+.login-page { position: fixed; inset: 0; display: flex; background: #0F2C40; }
+.login-left {
+  flex: 1.05; position: relative; color: #fff; padding: 54px 56px; display: flex; flex-direction: column;
+  background: linear-gradient(150deg, rgba(15,44,64,.94) 0%, rgba(27,79,114,.88) 55%, rgba(46,134,171,.62) 100%),
+    url('/uploads/seed/course/01.jpg') center/cover no-repeat;
+}
+.login-left h1 { font-size: 30px; margin: 0 0 12px; letter-spacing: 1px; }
+.login-left p { color: rgba(255,255,255,.78); max-width: 430px; line-height: 1.8; }
+.login-left .feats { margin-top: auto; display: grid; gap: 12px; max-width: 430px; }
+.login-left .feat { display: flex; gap: 10px; font-size: 13px; color: rgba(255,255,255,.86); }
+.login-left .feat i { color: var(--accent); font-style: normal; }
+.login-right { flex: .95; background: #fff; display: grid; place-items: center; padding: 40px; }
+.login-form { width: 360px; }
+.login-form h2 { font-size: 20px; margin: 0 0 6px; }
+.login-form .sub { color: var(--text-2); font-size: 12.5px; margin-bottom: 22px; }
+.login-form .row { margin-bottom: 14px; }
+.login-form .acc { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+.login-form .acc span {
+  font-size: 11.5px; color: var(--text-2); border: 1px solid var(--line); border-radius: 4px;
+  padding: 2px 6px; cursor: pointer;
+}
+.login-form .acc span:hover { color: var(--primary); border-color: var(--primary-2); }
+
+@media (max-width: 1200px) {
+  .course-grid { grid-template-columns: repeat(3, 1fr); }
+  .kpis { grid-template-columns: repeat(2, 1fr); }
+}

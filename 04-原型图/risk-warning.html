@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>学习预警台 - 在线课程学习与考试系统</title>
+<link rel="stylesheet" href="assets/mock.css">
+
+</head>
+<body><div class="app"><aside class="sidebar">
+  <div class="brand"><div class="logo">课</div><span>课程学习与考试</span></div>
+  <nav class="nav"><div class="nav-group">概览</div><a class="nav-item" href="dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v8H3zM14 3h7v5h-7zM14 11h7v10h-7zM3 14h7v7H3z"/></svg><span>数据看板</span></a><div class="nav-group">教学管理</div><a class="nav-item" href="course-list.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5zM20 18v3H6.5"/></svg><span>课程管理</span></a><a class="nav-item" href="course-audit.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zM14 3v5h5M9 14l2 2 4-4"/></svg><span>开课审核</span></a><a class="nav-item" href="chapter-edit.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span>章节课时</span></a><a class="nav-item" href="class-manage.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9.5 10a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M22 20v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg><span>教学班</span></a><div class="nav-group">考试管理</div><a class="nav-item" href="question-bank.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18M9.6 9.4a2.5 2.5 0 1 1 3.9 2.1c-.9.6-1.5 1.1-1.5 2.2M12 17h.01"/></svg><span>题库管理</span></a><a class="nav-item" href="exam-list.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 8l9 5 9-5zM3 13l9 5 9-5M3 17.5l9 5 9-5"/></svg><span>组卷与考试</span></a><a class="nav-item" href="grading.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span>阅卷台</span></a><a class="nav-item" href="score-list.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a5 5 0 1 0 0-10 5 5 0 0 0 0 10M8.5 14 7 22l5-3 5 3-1.5-8"/></svg><span>成绩管理</span></a><div class="nav-group">学习分析</div><a class="nav-item active" href="risk-warning.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0M12 9v4M12 17h.01"/></svg><span>学习预警台</span></a><a class="nav-item" href="risk-rule.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-2.9 1.2 2 2 0 1 1-4 0 1.7 1.7 0 0 0-2.9-1.2l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1A1.7 1.7 0 0 0 3 15a2 2 0 1 1 0-4 1.7 1.7 0 0 0 1.5-2.6l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1A1.7 1.7 0 0 0 10 4.6 2 2 0 1 1 14 4.6a1.7 1.7 0 0 0 2.6 1.5l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1A1.7 1.7 0 0 0 21 11a2 2 0 1 1 0 4z"/></svg><span>预警规则</span></a><a class="nav-item" href="statistics.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M7 21V10M12 21V4M17 21v-7"/></svg><span>课程统计</span></a><div class="nav-group">互动</div><a class="nav-item" href="discussion.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.9 9.9 0 0 1-4-.8L3 21l1.9-4.6A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg><span>课程讨论</span></a><a class="nav-item" href="message.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 8-3 8h18s-3-1-3-8M13.7 21a2 2 0 0 1-3.4 0"/></svg><span>消息中心</span></a><div class="nav-group">系统管理</div><a class="nav-item" href="user-manage.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/></svg><span>用户管理</span></a><a class="nav-item" href="role-manage.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>角色管理</span></a><a class="nav-item" href="menu-manage.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg><span>菜单管理</span></a><a class="nav-item" href="dict-manage.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v12a3 3 0 0 0-3-3H2zM22 4h-6a4 4 0 0 0-4 4v12a3 3 0 0 1 3-3h7z"/></svg><span>数据字典</span></a><a class="nav-item" href="log-list.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zM14 3v5h5M9 13h6M9 17h4"/></svg><span>操作日志</span></a></nav>
+  <div class="sidebar-foot">v1.0.0 · 2026 秋季学期</div>
+</aside><div class="main"><header class="topbar">
+  <div class="crumb">教学管理平台 <span>/</span> <b>学习预警台</b></div>
+  <div class="topbar-right">
+    <div class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16M21 21l-4.3-4.3"/></svg></div>
+    <a class="icon-btn" href="message.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 8-3 8h18s-3-1-3-8M13.7 21a2 2 0 0 1-3.4 0"/></svg><i class="dot"></i></a>
+    <div class="user-chip">
+      <div class="avatar">A</div>
+      <div><div class="u-name">admin</div><div class="u-role">系统管理员</div></div>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+  </div>
+</header><div class="content"><div class="page-head"><div><h1>学习预警台</h1><div class="sub">预警口径：五项加权 · 规则版本 v3.2 · 最近计算 2026-11-01 18:00</div></div><div class="actions"><button class="btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>导出预警单</button><button class="btn btn-accent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.4M21 3v6h-6"/></svg>重新计算</button></div></div><div class="grid g-4 mb12">
+      <div class="kpi"><div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9.5 10a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M22 20v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg><span>预警学生总数</span></div><div class="value">186<small>人</small></div><div class="foot">覆盖 26 门课程</div></div>
+      <div class="kpi accent"><div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0M12 9v4M12 17h.01"/></svg><span>高风险 (<55)</span></div><div class="value">17<small>人</small></div><div class="foot"><span class="danger-c">限制期末考试</span></div></div>
+      <div class="kpi accent"><div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V4s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"/></svg><span>中风险 (55-69)</span></div><div class="value">42<small>人</small></div><div class="foot">要求 7 天内补学</div></div>
+      <div class="kpi"><div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M23 6l-9.5 9.5-5-5L1 18M17 6h6v6"/></svg><span>关注 (70-84)</span></div><div class="value">127<small>人</small></div><div class="foot">推送学习计划</div></div>
+    </div>
+    <div class="card mb12"><div class="filters">
+      <div class="f"><label>风险等级</label><select class="select" style="width:140px"><option>全部等级</option><option>高风险</option><option>中风险</option><option>关注</option></select></div>
+      <div class="f"><label>课程</label><select class="select" style="width:200px"><option>数据结构与算法</option></select></div>
+      <div class="f"><label>教学班</label><select class="select" style="width:150px"><option>01 班</option></select></div>
+      <div class="f"><input class="input w-md" placeholder="学号 / 姓名"></div>
+      <div class="spacer"></div><button class="btn btn-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16M21 21l-4.3-4.3"/></svg>筛选</button></div></div>
+    <div class="flex gap12" style="align-items:flex-start">
+      <div class="card" style="flex:1;min-width:0">
+        <table><thead><tr><th>学生</th><th>风险等级</th><th style="width:260px">五项因子得分</th><th>主要短板</th><th>建议动作</th><th>操作</th></tr></thead><tbody>
+          <tr><td class="t-main">李泽宇<div class="sub">2023010247 · 计算机 2302</div></td>
+            <td><span class="tag tag-red tag-dot">高风险 48.6</span></td>
+            <td><div class="s11" style="line-height:1.9">
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">观看完成率</span><div class="track" style="height:5px"><i style="width:32%;background:#B02A37"></i></div><span class="val" style="width:24px">32</span></div>
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">提交及时率</span><div class="track" style="height:5px"><i style="width:41%;background:#B02A37"></i></div><span class="val" style="width:24px">41</span></div>
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">测验得分率</span><div class="track" style="height:5px"><i style="width:38%;background:#B02A37"></i></div><span class="val" style="width:24px">38</span></div>
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">登录频次</span><div class="track" style="height:5px"><i style="width:40%;background:#B02A37"></i></div><span class="val" style="width:24px">40</span></div>
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">讨论参与</span><div class="track" style="height:5px"><i style="width:2%;background:#B02A37"></i></div><span class="val" style="width:24px">0</span></div>
+            </div></td>
+            <td class="s11">14 天仅登录 1 次<br>必修节点仅完成 32%</td>
+            <td class="s11">抄送辅导员<br>限制期末考试</td>
+            <td class="cell-actions"><a class="btn-text">详情</a><button class="btn-text">干预</button></td></tr>
+          <tr><td class="t-main">张子航<div class="sub">2023010221 · 计算机 2302</div></td>
+            <td><span class="tag tag-orange tag-dot">中风险 63.2</span></td>
+            <td><div class="s11" style="line-height:1.9">
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">观看完成率</span><div class="track" style="height:5px"><i style="width:58%;background:#F39C12"></i></div><span class="val" style="width:24px">58</span></div>
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">提交及时率</span><div class="track" style="height:5px"><i style="width:66%;background:#F39C12"></i></div><span class="val" style="width:24px">66</span></div>
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">测验得分率</span><div class="track" style="height:5px"><i style="width:61%;background:#F39C12"></i></div><span class="val" style="width:24px">61</span></div>
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">登录频次</span><div class="track" style="height:5px"><i style="width:70%;background:#F39C12"></i></div><span class="val" style="width:24px">70</span></div>
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">讨论参与</span><div class="track" style="height:5px"><i style="width:20%;background:#F39C12"></i></div><span class="val" style="width:24px">20</span></div>
+            </div></td>
+            <td class="s11">第 5-6 章未完成<br>2 次测验迟交</td>
+            <td class="s11">推送学习计划<br>7 天内补学</td>
+            <td class="cell-actions"><a class="btn-text">详情</a><button class="btn-text">干预</button></td></tr>
+          <tr><td class="t-main">王雨桐<div class="sub">2023010233 · 计算机 2303</div></td>
+            <td><span class="tag tag-blue tag-dot">关注 76.4</span></td>
+            <td><div class="s11" style="line-height:1.9">
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">观看完成率</span><div class="track" style="height:5px"><i style="width:81%;background:#2E86AB"></i></div><span class="val" style="width:24px">81</span></div>
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">提交及时率</span><div class="track" style="height:5px"><i style="width:72%;background:#2E86AB"></i></div><span class="val" style="width:24px">72</span></div>
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">测验得分率</span><div class="track" style="height:5px"><i style="width:68%;background:#2E86AB"></i></div><span class="val" style="width:24px">68</span></div>
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">登录频次</span><div class="track" style="height:5px"><i style="width:85%;background:#2E86AB"></i></div><span class="val" style="width:24px">85</span></div>
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">讨论参与</span><div class="track" style="height:5px"><i style="width:2%;background:#2E86AB"></i></div><span class="val" style="width:24px">0</span></div>
+            </div></td>
+            <td class="s11">讨论参与度 0<br>登录频次偏低</td>
+            <td class="s11">推送章节更新提醒</td>
+            <td class="cell-actions"><a class="btn-text">详情</a><button class="btn-text">干预</button></td></tr>
+          <tr><td class="t-main">林清和<div class="sub">2023010218 · 计算机 2301</div></td>
+            <td><span class="tag tag-green tag-dot">低风险 92.1</span></td>
+            <td><div class="s11" style="line-height:1.9">
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">观看完成率</span><div class="track" style="height:5px"><i style="width:96%;background:#2B7955"></i></div><span class="val" style="width:24px">96</span></div>
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">提交及时率</span><div class="track" style="height:5px"><i style="width:92%;background:#2B7955"></i></div><span class="val" style="width:24px">92</span></div>
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">测验得分率</span><div class="track" style="height:5px"><i style="width:88%;background:#2B7955"></i></div><span class="val" style="width:24px">88</span></div>
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">登录频次</span><div class="track" style="height:5px"><i style="width:85%;background:#2B7955"></i></div><span class="val" style="width:24px">85</span></div>
+              <div class="bar-row" style="gap:6px"><span class="nm" style="width:74px;flex:0 0 74px">讨论参与</span><div class="track" style="height:5px"><i style="width:90%;background:#2B7955"></i></div><span class="val" style="width:24px">90</span></div>
+            </div></td>
+            <td class="s11 muted">无明显短板</td>
+            <td class="s11">保持节奏</td>
+            <td class="cell-actions"><a class="btn-text">详情</a></td></tr>
+        </tbody></table><div class="pager">
+  <span class="total">共 186 条</span>
+  <div class="spacer"></div>
+  <div class="pg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><div class="pg active">1</div><div class="pg">2</div><div class="pg">3</div><div class="pg">4</div><div class="pg">5</div><div class="pg ellipsis">…</div><div class="pg">19</div><div class="pg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+  <select class="select" style="width:96px;height:26px"><option>10 条/页</option><option>20 条/页</option><option>50 条/页</option></select>
+</div></div>
+      <div class="card" style="width:340px;flex:0 0 340px">
+        <div class="card-head"><h3>预警详情 · 李泽宇</h3><span class="tag tag-red tag-dot">高风险</span></div>
+        <div class="card-body">
+          <div class="between"><span class="s11 muted">风险分</span><span class="s11 muted">规则 v3.2 · 11-01 18:00</span></div>
+          <div class="flex" style="align-items:baseline;gap:6px;margin-top:4px"><b style="font-size:30px;color:#B02A37">48.6</b><span class="s12 muted">/ 100 · 高风险</span></div>
+          <div class="progress bad mt8"><i style="width:48.6%"></i></div>
+          <div class="section-title mt14" style="padding-left:0">五项因子</div>
+          <table class="mt6"><tbody>
+            <tr><td class="s12">视频观看完成率（30%）</td><td class="right s12">32 → 32.0</td><td class="right s11 muted">−20.4</td></tr>
+            <tr><td class="s12">提交及时率（20%）</td><td class="right s12">41 → 41.0</td><td class="right s11 muted">−11.8</td></tr>
+            <tr><td class="s12">测验得分率（25%）</td><td class="right s12">38 → 38.0</td><td class="right s11 muted">−15.5</td></tr>
+            <tr><td class="s12">14 天登录频次（15%）</td><td class="right s12">1 次 → 40.0</td><td class="right s11 muted">−9.0</td></tr>
+            <tr><td class="s12">讨论参与度（10%）</td><td class="right s12">0 → 0.0</td><td class="right s11 muted">−10.0</td></tr>
+          </tbody></table>
+          <div class="alert alert-danger mt10" style="padding:7px 9px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0M12 9v4M12 17h.01"/></svg> 未满足：必修节点完成率 < 60%；14 天登录 < 2 次。按规则限制参加期末考试，需完成补学与补测。</div>
+          <div class="section-title mt12" style="padding-left:0">人工修正</div>
+          <select class="select w100 mt6"><option>维持高风险</option><option>下调为中风险</option><option>上调为高风险</option></select>
+          <textarea class="textarea w100 mt8" style="height:56px" placeholder="修正原因（不少于 5 字）"></textarea>
+          <div class="s11 muted mt6">原始计算结果与规则快照保留，修正记录写入留痕表。</div>
+          <div class="flex gap8 mt10"><button class="btn w100">发布干预</button><button class="btn btn-primary w100">保存修正</button></div>
+        </div>
+      </div>
+    </div></div></div></div></body></html>

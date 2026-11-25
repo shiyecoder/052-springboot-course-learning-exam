@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>课程讨论 - 在线课程学习与考试系统</title>
+<link rel="stylesheet" href="assets/mock.css">
+
+</head>
+<body><div class="app"><aside class="sidebar">
+  <div class="brand"><div class="logo">课</div><span>课程学习与考试</span></div>
+  <nav class="nav"><div class="nav-group">概览</div><a class="nav-item" href="dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v8H3zM14 3h7v5h-7zM14 11h7v10h-7zM3 14h7v7H3z"/></svg><span>数据看板</span></a><div class="nav-group">教学管理</div><a class="nav-item" href="course-list.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5zM20 18v3H6.5"/></svg><span>课程管理</span></a><a class="nav-item" href="course-audit.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zM14 3v5h5M9 14l2 2 4-4"/></svg><span>开课审核</span></a><a class="nav-item" href="chapter-edit.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span>章节课时</span></a><a class="nav-item" href="class-manage.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9.5 10a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M22 20v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg><span>教学班</span></a><div class="nav-group">考试管理</div><a class="nav-item" href="question-bank.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18M9.6 9.4a2.5 2.5 0 1 1 3.9 2.1c-.9.6-1.5 1.1-1.5 2.2M12 17h.01"/></svg><span>题库管理</span></a><a class="nav-item" href="exam-list.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 8l9 5 9-5zM3 13l9 5 9-5M3 17.5l9 5 9-5"/></svg><span>组卷与考试</span></a><a class="nav-item" href="grading.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span>阅卷台</span></a><a class="nav-item" href="score-list.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a5 5 0 1 0 0-10 5 5 0 0 0 0 10M8.5 14 7 22l5-3 5 3-1.5-8"/></svg><span>成绩管理</span></a><div class="nav-group">学习分析</div><a class="nav-item" href="risk-warning.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0M12 9v4M12 17h.01"/></svg><span>学习预警台</span></a><a class="nav-item" href="risk-rule.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-2.9 1.2 2 2 0 1 1-4 0 1.7 1.7 0 0 0-2.9-1.2l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1A1.7 1.7 0 0 0 3 15a2 2 0 1 1 0-4 1.7 1.7 0 0 0 1.5-2.6l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1A1.7 1.7 0 0 0 10 4.6 2 2 0 1 1 14 4.6a1.7 1.7 0 0 0 2.6 1.5l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1A1.7 1.7 0 0 0 21 11a2 2 0 1 1 0 4z"/></svg><span>预警规则</span></a><a class="nav-item" href="statistics.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M7 21V10M12 21V4M17 21v-7"/></svg><span>课程统计</span></a><div class="nav-group">互动</div><a class="nav-item active" href="discussion.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.9 9.9 0 0 1-4-.8L3 21l1.9-4.6A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg><span>课程讨论</span></a><a class="nav-item" href="message.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 8-3 8h18s-3-1-3-8M13.7 21a2 2 0 0 1-3.4 0"/></svg><span>消息中心</span></a><div class="nav-group">系统管理</div><a class="nav-item" href="user-manage.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/></svg><span>用户管理</span></a><a class="nav-item" href="role-manage.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>角色管理</span></a><a class="nav-item" href="menu-manage.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg><span>菜单管理</span></a><a class="nav-item" href="dict-manage.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v12a3 3 0 0 0-3-3H2zM22 4h-6a4 4 0 0 0-4 4v12a3 3 0 0 1 3-3h7z"/></svg><span>数据字典</span></a><a class="nav-item" href="log-list.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zM14 3v5h5M9 13h6M9 17h4"/></svg><span>操作日志</span></a></nav>
+  <div class="sidebar-foot">v1.0.0 · 2026 秋季学期</div>
+</aside><div class="main"><header class="topbar">
+  <div class="crumb">教学管理平台 <span>/</span> <b>课程讨论</b></div>
+  <div class="topbar-right">
+    <div class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16M21 21l-4.3-4.3"/></svg></div>
+    <a class="icon-btn" href="message.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 8-3 8h18s-3-1-3-8M13.7 21a2 2 0 0 1-3.4 0"/></svg><i class="dot"></i></a>
+    <div class="user-chip">
+      <div class="avatar">A</div>
+      <div><div class="u-name">admin</div><div class="u-role">系统管理员</div></div>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+  </div>
+</header><div class="content"><div class="page-head"><div><h1>课程讨论</h1><div class="sub">数据结构与算法 · 8 个主题 · 未回复 3 条</div></div><div class="actions"><div class="select" style="width:190px">全部章节</div><button class="btn btn-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>发起主题</button></div></div><div class="flex gap12" style="align-items:flex-start">
+      <div class="card" style="flex:1;min-width:0">
+        <div class="card-body" style="padding:0">
+          <div style="padding:14px;border-bottom:1px solid #EEF0F2">
+            <div class="between mb6"><div class="flex gap8"><span class="tag tag-orange">待回复</span><span class="tag tag-gray">第 4 章 树与二叉树</span></div><span class="s11 muted">2 小时前</span></div>
+            <div class="t-main" style="font-size:13.5px">为什么二叉搜索树删除有两个子结点的节点时，要用后继结点替换？</div>
+            <div class="s12 muted mt6" style="line-height:1.8">用前驱替换不是也可以吗？两者的复杂度有区别吗？我看课件上只写了后继…</div>
+            <div class="between mt8"><span class="s11 muted">林清和 · 2023010218 · 回复 0</span><span class="s11"><a class="btn-text">回复</a><a class="btn-text">标记精华</a></span></div>
+          </div>
+          <div style="padding:14px;border-bottom:1px solid #EEF0F2">
+            <div class="between mb6"><div class="flex gap8"><span class="tag tag-green">已解决</span><span class="tag tag-gray">第 2 章 线性表</span></div><span class="s11 muted">昨天 16:20</span></div>
+            <div class="t-main" style="font-size:13.5px">单链表头插法与尾插法建表的时间复杂度差异</div>
+            <div class="s12 muted mt6" style="line-height:1.8">头插法 O(n) 但会逆序，尾插法也是 O(n) 但需要维护尾指针，实测两者差不多，为什么教材强调尾插法？</div>
+            <div class="between mt8"><span class="s11 muted">王雨桐 · 2023010233 · 回复 4 · 被采纳 1</span><span class="s11"><a class="btn-text">查看</a><a class="btn-text">标记精华</a></span></div>
+          </div>
+          <div style="padding:14px">
+            <div class="between mb6"><div class="flex gap8"><span class="tag tag-blue">讨论中</span><span class="tag tag-gray">综合讨论</span></div><span class="s11 muted">10-30</span></div>
+            <div class="t-main" style="font-size:13.5px">期末课程设计选题范围与提交要求</div>
+            <div class="s12 muted mt6" style="line-height:1.8">想确认课程设计是否必须包含图算法，能否只做树与排序部分？</div>
+            <div class="between mt8"><span class="s11 muted">张子航 · 2023010221 · 回复 7</span><span class="s11"><a class="btn-text">查看</a><a class="btn-text">置顶</a></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width:320px;flex:0 0 320px">
+        <div class="card-head"><h3>参与度统计</h3><span class="hint">刷屏与自问自答不计入</span></div>
+        <div class="card-body">
+          <div style="display:flex;align-items:center;gap:14px"><svg viewBox="0 0 180 150" style="width:170px;height:150px;flex:0 0 170px"><path d="M90.0 23.0 A52 52 0 1 1 54.4 112.9" stroke="#2E86AB" stroke-width="16" fill="none"/><path d="M54.4 112.9 A52 52 0 0 1 49.9 41.9" stroke="#1B4F72" stroke-width="16" fill="none"/><path d="M49.9 41.9 A52 52 0 0 1 90.0 23.0" stroke="#F39C12" stroke-width="16" fill="none"/><text x="90" y="72" font-size="16" font-weight="600" fill="#1B4F72" text-anchor="middle">100</text><text x="90" y="88" font-size="9" fill="#8A949C" text-anchor="middle">总占比%</text></svg><div style="flex:1"><div style="display:flex;align-items:center;gap:6px;font-size:11.5px;margin-bottom:7px"><i style="width:8px;height:8px;border-radius:2px;background:#2E86AB;display:inline-block"></i><span style="color:#5B6770">学生发帖</span><b style="margin-left:auto;color:#1F2933">62%</b></div><div style="display:flex;align-items:center;gap:6px;font-size:11.5px;margin-bottom:7px"><i style="width:8px;height:8px;border-radius:2px;background:#1B4F72;display:inline-block"></i><span style="color:#5B6770">教师回复</span><b style="margin-left:auto;color:#1F2933">24%</b></div><div style="display:flex;align-items:center;gap:6px;font-size:11.5px;margin-bottom:7px"><i style="width:8px;height:8px;border-radius:2px;background:#F39C12;display:inline-block"></i><span style="color:#5B6770">助教回复</span><b style="margin-left:auto;color:#1F2933">14%</b></div></div></div>
+          <div class="divider"></div>
+          <div class="s11 muted mb6">活跃学生 TOP 5</div>
+          <table><tbody>
+            <tr><td class="s12">王雨桐</td><td class="right s11 muted">发帖 12 · 采纳 4</td></tr>
+            <tr><td class="s12">林清和</td><td class="right s11 muted">发帖 9 · 采纳 3</td></tr>
+            <tr><td class="s12">陈佳怡</td><td class="right s11 muted">发帖 7 · 采纳 2</td></tr>
+            <tr><td class="s12">刘思远</td><td class="right s11 muted">发帖 5 · 采纳 1</td></tr>
+            <tr><td class="s12">张子航</td><td class="right s11 muted">发帖 4 · 采纳 0</td></tr>
+          </tbody></table>
+          <div class="alert alert-info mt10" style="padding:7px 9px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18M9.6 9.4a2.5 2.5 0 1 1 3.9 2.1c-.9.6-1.5 1.1-1.5 2.2M12 17h.01"/></svg> 连续 3 条相似提问已自动合并，并提示已有解答链接。</div>
+        </div>
+      </div>
+    </div></div></div></div></body></html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>阅卷台 - 在线课程学习与考试系统</title>
+<link rel="stylesheet" href="assets/mock.css">
+
+</head>
+<body><div class="app"><aside class="sidebar">
+  <div class="brand"><div class="logo">课</div><span>课程学习与考试</span></div>
+  <nav class="nav"><div class="nav-group">概览</div><a class="nav-item" href="dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v8H3zM14 3h7v5h-7zM14 11h7v10h-7zM3 14h7v7H3z"/></svg><span>数据看板</span></a><div class="nav-group">教学管理</div><a class="nav-item" href="course-list.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5zM20 18v3H6.5"/></svg><span>课程管理</span></a><a class="nav-item" href="course-audit.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zM14 3v5h5M9 14l2 2 4-4"/></svg><span>开课审核</span></a><a class="nav-item" href="chapter-edit.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span>章节课时</span></a><a class="nav-item" href="class-manage.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9.5 10a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M22 20v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg><span>教学班</span></a><div class="nav-group">考试管理</div><a class="nav-item" href="question-bank.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18M9.6 9.4a2.5 2.5 0 1 1 3.9 2.1c-.9.6-1.5 1.1-1.5 2.2M12 17h.01"/></svg><span>题库管理</span></a><a class="nav-item" href="exam-list.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 8l9 5 9-5zM3 13l9 5 9-5M3 17.5l9 5 9-5"/></svg><span>组卷与考试</span></a><a class="nav-item active" href="grading.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span>阅卷台</span></a><a class="nav-item" href="score-list.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a5 5 0 1 0 0-10 5 5 0 0 0 0 10M8.5 14 7 22l5-3 5 3-1.5-8"/></svg><span>成绩管理</span></a><div class="nav-group">学习分析</div><a class="nav-item" href="risk-warning.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0M12 9v4M12 17h.01"/></svg><span>学习预警台</span></a><a class="nav-item" href="risk-rule.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-2.9 1.2 2 2 0 1 1-4 0 1.7 1.7 0 0 0-2.9-1.2l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1A1.7 1.7 0 0 0 3 15a2 2 0 1 1 0-4 1.7 1.7 0 0 0 1.5-2.6l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1A1.7 1.7 0 0 0 10 4.6 2 2 0 1 1 14 4.6a1.7 1.7 0 0 0 2.6 1.5l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1A1.7 1.7 0 0 0 21 11a2 2 0 1 1 0 4z"/></svg><span>预警规则</span></a><a class="nav-item" href="statistics.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M7 21V10M12 21V4M17 21v-7"/></svg><span>课程统计</span></a><div class="nav-group">互动</div><a class="nav-item" href="discussion.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.9 9.9 0 0 1-4-.8L3 21l1.9-4.6A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg><span>课程讨论</span></a><a class="nav-item" href="message.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 8-3 8h18s-3-1-3-8M13.7 21a2 2 0 0 1-3.4 0"/></svg><span>消息中心</span></a><div class="nav-group">系统管理</div><a class="nav-item" href="user-manage.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/></svg><span>用户管理</span></a><a class="nav-item" href="role-manage.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>角色管理</span></a><a class="nav-item" href="menu-manage.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg><span>菜单管理</span></a><a class="nav-item" href="dict-manage.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v12a3 3 0 0 0-3-3H2zM22 4h-6a4 4 0 0 0-4 4v12a3 3 0 0 1 3-3h7z"/></svg><span>数据字典</span></a><a class="nav-item" href="log-list.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zM14 3v5h5M9 13h6M9 17h4"/></svg><span>操作日志</span></a></nav>
+  <div class="sidebar-foot">v1.0.0 · 2026 秋季学期</div>
+</aside><div class="main"><header class="topbar">
+  <div class="crumb">教学管理平台 <span>/</span> <b>阅卷台</b></div>
+  <div class="topbar-right">
+    <div class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16M21 21l-4.3-4.3"/></svg></div>
+    <a class="icon-btn" href="message.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 8-3 8h18s-3-1-3-8M13.7 21a2 2 0 0 1-3.4 0"/></svg><i class="dot"></i></a>
+    <div class="user-chip">
+      <div class="avatar">A</div>
+      <div><div class="u-name">admin</div><div class="u-role">系统管理员</div></div>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+  </div>
+</header><div class="content"><div class="page-head"><div><h1>阅卷台</h1><div class="sub">线性代数 · 期中考试 · 待批阅 42 份 · 已完成 18 份</div></div><div class="actions"><button class="btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3H2l8 9.5V19l4 2v-8.5z"/></svg>仅看差异卷</button><button class="btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>导出批阅记录</button></div></div><div class="grade" style="height:calc(100vh - 56px - 150px)"><div class="card" style="width:250px;flex:0 0 250px;display:flex;flex-direction:column">
+  <div class="card-head"><h3>待批阅答卷</h3><span class="tag tag-orange tag-dot">42</span></div>
+  <div class="filters" style="padding:9px 10px;border-bottom:1px solid #EEF0F2">
+    <input class="input w100" placeholder="学号 / 姓名" style="height:28px">
+  </div>
+  <div style="flex:1;overflow-y:auto">
+    <div class="grade"><div style="position:relative">
+      <div style="padding:9px 11px;border-bottom:1px solid #EEF0F2;background:#E4F1F7;border-left:2px solid #2E86AB">
+        <div class="between"><span class="t-main">林清和</span><span class="s11 muted">2023010218</span></div>
+        <div class="s11 muted mt6">主观题 3 题待阅 · 客观 62 分</div>
+      </div>
+      <div style="padding:9px 11px;border-bottom:1px solid #EEF0F2">
+        <div class="between"><span class="t-main">张子航</span><span class="s11 muted">2023010221</span></div>
+        <div class="s11 muted mt6">主观题 3 题待阅 · 客观 58 分</div>
+      </div>
+      <div style="padding:9px 11px;border-bottom:1px solid #EEF0F2">
+        <div class="between"><span class="t-main">王雨桐</span><span class="s11 muted">2023010233</span></div>
+        <div class="s11 muted mt6">主观题 2 题待阅 · 客观 71 分</div>
+      </div>
+      <div style="padding:9px 11px;border-bottom:1px solid #EEF0F2">
+        <div class="between"><span class="t-main">李泽宇</span><span class="s11 muted">2023010247</span></div>
+        <div class="s11 muted mt6">主观题 3 题待阅 · 客观 49 分</div>
+      </div>
+      <div style="padding:9px 11px;border-bottom:1px solid #EEF0F2">
+        <div class="between"><span class="t-main">陈佳怡</span><span class="s11 muted">2023010250</span></div>
+        <div class="s11 muted mt6">主观题 1 题待阅 · 客观 78 分</div>
+      </div>
+    </div></div>
+  </div>
+</div><div class="card" style="flex:1;display:flex;flex-direction:column;min-width:0">
+  <div class="card-head"><h3>第 21 题 · 简答（10 分）</h3><span class="hint">林清和 · 2023010218 · 第 1/3 份</span>
+    <span class="more">切换题目：21 22 23</span></div>
+  <div class="card-body" style="flex:1;overflow-y:auto">
+    <div class="s12 muted mb6">题干</div>
+    <div style="font-size:13px;line-height:1.9;margin-bottom:14px">简述快速排序的分区（partition）过程，并分析其平均时间复杂度与最坏情况出现条件。</div>
+    <div class="s12 muted mb6">学生作答</div>
+    <div class="answer-box">分区过程：选取基准元素 pivot，通常取首元素。设置左右两个指针 i、j，先从右向左找到第一个小于 pivot 的元素，再从左向右找到第一个大于 pivot 的元素，交换两者；重复直到 i ≥ j，最后将 pivot 与 j 位置元素交换，此时 pivot 左侧均不大于它、右侧均不小于它。<br><br>平均时间复杂度为 O(nlogn)，每次划分接近均分，递归深度 logn；最坏情况是每次选取的基准都是最大或最小元素（如数组已有序且取首元素为基准），此时退化为 O(n²)，递归深度 n。</div>
+    <div class="grid g-2 mt14">
+      <div class="card" style="box-shadow:none"><div class="card-body" style="padding:10px 12px">
+        <div class="s11 muted mb6">评分要点</div>
+        <div class="s12" style="line-height:1.9">① 基准选取与双指针移动（3 分）<br>② 交换与终止条件（3 分）<br>③ 平均 O(nlogn) 推导（2 分）<br>④ 最坏 O(n²) 条件（2 分）</div>
+      </div></div>
+      <div class="card" style="box-shadow:none"><div class="card-body" style="padding:10px 12px">
+        <div class="s11 muted mb6">参考答案</div>
+        <div class="s12" style="line-height:1.9">取首元素为 pivot，j 从右往左找小于 pivot 者，i 从左往右找大于 pivot 者并交换；i≥j 时 pivot 与 j 交换。平均 O(nlogn)，有序输入取首元素为基准时最坏 O(n²)。</div>
+      </div></div>
+    </div>
+    <div class="alert alert-warn mt12"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0M12 9v4M12 17h.01"/></svg> 该答卷另一名教师初评 6.0 分，与你当前评分差 4.0 分；差超过 10 分将自动转仲裁。</div>
+  </div>
+</div><div class="card" style="width:280px;flex:0 0 280px;display:flex;flex-direction:column">
+  <div class="card-head"><h3>评分</h3><span class="hint">不得超过 10 分</span></div>
+  <div class="card-body" style="flex:1">
+    <div class="field" style="display:block"><label style="width:auto;text-align:left;display:block;margin-bottom:6px">本题得分</label>
+      <div class="flex gap8"><input class="input" value="8.0" style="width:100px"><span class="s12 muted" style="padding-top:7px">/ 10.0 分</span></div></div>
+    <div class="field mt12" style="display:block"><label style="width:auto;text-align:left;display:block;margin-bottom:6px"><span class="req">*</span>评语（必填）</label>
+      <textarea class="textarea" style="width:100%;height:88px">分区过程描述准确，双指针移动与终止条件完整；平均复杂度推导正确，最坏情况说明到有序输入，可再补充递归栈深度。</textarea></div>
+    <div class="divider"></div>
+    <div class="s11 muted mb6">快捷评分</div>
+    <div class="flex gap6 mb12"><button class="btn btn-sm">6.0</button><button class="btn btn-sm">7.0</button><button class="btn btn-sm">8.0</button><button class="btn btn-sm">9.0</button><button class="btn btn-sm">10.0</button></div>
+    <div class="s11 muted mb6">本卷已批</div>
+    <div class="between s12 mb6"><span>客观题</span><b>62.0 / 70.0</b></div>
+    <div class="between s12 mb6"><span>主观题</span><b>8.0 / 30.0</b></div>
+    <div class="between s12 mb6"><span>当前总分</span><b class="primary-c" style="font-size:15px">70.0 / 100</b></div>
+    <div class="progress mt6"><i style="width:70%"></i></div>
+    <div class="alert alert-info mt12" style="padding:7px 9px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18M9.6 9.4a2.5 2.5 0 1 1 3.9 2.1c-.9.6-1.5 1.1-1.5 2.2M12 17h.01"/></svg> 3 道主观题全部评分后才可提交本份答卷。</div>
+  </div>
+  <div class="drawer-foot" style="border-top:1px solid #EEF0F2;flex-direction:column;gap:8px">
+    <button class="btn btn-primary w100">提交并批阅下一份</button>
+    <button class="btn w100">暂存</button>
+  </div>
+</div></div></div></div></div></body></html>
